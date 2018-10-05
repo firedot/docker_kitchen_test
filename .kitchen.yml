@@ -2,15 +2,10 @@
  driver:
    name: docker
 
- platforms: #a list of OS on which we're going to run the tests
+ platforms:
    - name: ubuntu
      driver:
-       image: <%= $DOCKER_HUB_IMAGE %>
-# driver: 
-#   username: <%= $DOCKER_HUB_USERNAME %>
-#   password: <%= $DOCKER_HUB_PASSWORD %>
-#   dockerfile: firedot/xenial_nginx
-
+         image: firedot/xenial_nginx:0.1538464123
  suites: 
  - name: default
    driver: 
