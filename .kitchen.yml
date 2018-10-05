@@ -5,7 +5,7 @@
  platforms: #a list of OS on which we're going to run the tests
    - name: ubuntu
      driver:
-       image: firedot/xenial_nginx:0.1538464123
+       image: <%= $DOCKER_HUB_IMAGE %>
 # driver: 
 #   username: <%= $DOCKER_HUB_USERNAME %>
 #   password: <%= $DOCKER_HUB_PASSWORD %>
